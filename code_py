@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# # Question 2 : Part A
+
+# In[3]:
+
+
+def numerical_analysis(randList):
+    mn = min(randList)
+    mx = max(randList)
+    av = sum(randList) / len(randList)
+    return mn, mx, av
