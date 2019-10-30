@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# # Question 2 : Part A
+
+# In[3]:
+
+
+def numerical_analysis(randList):
+    mn = min(randList)
+    mx = max(randList)
+    av = sum(randList) / len(randList)
+    return mn, mx, av
+
+# # Question 2 : Part B
+
+# In[4]:
+
+
+import random
+num = [random.randint(0,10) for x in range(100)]
+mn, mx, av = numerical_analysis(num)
+assert mn <= av <= mx
+
+print (num)
